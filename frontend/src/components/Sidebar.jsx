@@ -194,6 +194,14 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
               <LogOut className="w-5 h-5" />
               <span className="font-bold uppercase tracking-wider text-xs">Logout Session</span>
             </button>
+
+            <div className="pt-2 px-1 flex items-center justify-between text-[11px] text-white/40">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Mock Data Mode
+              </span>
+              <span className="text-[10px] bg-white/10 px-1.5 py-0.5 rounded text-white/60">Standalone</span>
+            </div>
           </div>
         </div>
       </aside>

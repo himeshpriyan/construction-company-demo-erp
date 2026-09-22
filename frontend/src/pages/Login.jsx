@@ -228,7 +228,86 @@ export default function Login() {
             </button>
           </form>
 
-
+          {/* Quick Mock Login Shortcuts */}
+          <div className="mt-6 pt-5 border-t border-slate-100">
+            <div className="flex items-center justify-between mb-2.5">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Demo Accounts (Mock Data)
+              </span>
+              <span className="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-md font-semibold border border-emerald-200">Standalone Mock Mode</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setPortal('store');
+                  setEmail('deepikabuiltech@gmail.com');
+                  setPassword('deepikabuiltech@123');
+                  setError('');
+                }}
+                className="p-2 rounded-lg border border-slate-200 hover:border-primary/50 hover:bg-slate-50 text-left transition-all group"
+                title="Click to auto-fill Admin credentials"
+              >
+                <div className="text-[11px] font-bold text-slate-700 group-hover:text-primary flex items-center justify-between">
+                  <span>Admin</span>
+                  <span className="text-[9px] text-slate-400 font-normal">Full Access</span>
+                </div>
+                <div className="text-[10px] text-slate-400 truncate">deepikabuiltech@gmail.com</div>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setPortal('store');
+                  setEmail('store@deepikabuiltech.com');
+                  setPassword('store@123');
+                  setError('');
+                }}
+                className="p-2 rounded-lg border border-slate-200 hover:border-primary/50 hover:bg-slate-50 text-left transition-all group"
+                title="Click to auto-fill Store Team Lead credentials"
+              >
+                <div className="text-[11px] font-bold text-slate-700 group-hover:text-primary flex items-center justify-between">
+                  <span>Store Lead</span>
+                  <span className="text-[9px] text-slate-400 font-normal">GRN & Stock</span>
+                </div>
+                <div className="text-[10px] text-slate-400 truncate">store@deepikabuiltech.com</div>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setPortal('purchase');
+                  setEmail('purchase@deepikabuiltech.com');
+                  setPassword('purchase@123');
+                  setError('');
+                }}
+                className="p-2 rounded-lg border border-slate-200 hover:border-primary/50 hover:bg-slate-50 text-left transition-all group"
+                title="Click to auto-fill Purchase Manager credentials"
+              >
+                <div className="text-[11px] font-bold text-slate-700 group-hover:text-primary flex items-center justify-between">
+                  <span>Purchase Mgr</span>
+                  <span className="text-[9px] text-slate-400 font-normal">PO & Vendors</span>
+                </div>
+                <div className="text-[10px] text-slate-400 truncate">purchase@deepikabuiltech.com</div>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setPortal('viewer');
+                  setEmail('viewer@deepikabuiltech.com');
+                  setPassword('viewer@123');
+                  setError('');
+                }}
+                className="p-2 rounded-lg border border-slate-200 hover:border-primary/50 hover:bg-slate-50 text-left transition-all group"
+                title="Click to auto-fill Viewer credentials"
+              >
+                <div className="text-[11px] font-bold text-slate-700 group-hover:text-primary flex items-center justify-between">
+                  <span>Guest Viewer</span>
+                  <span className="text-[9px] text-slate-400 font-normal">Read Only</span>
+                </div>
+                <div className="text-[10px] text-slate-400 truncate">viewer@deepikabuiltech.com</div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

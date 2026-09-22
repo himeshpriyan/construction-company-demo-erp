@@ -1,6 +1,7 @@
 {
   "name": "dbtech-erp-root",
   "version": "1.0.0",
+  "description": "Deepika Builtech ERP - Standalone Client with Mock Data (No Backend Required)",
   "private": true,
   "scripts": {
     "install-all": "cd frontend && npm install",
